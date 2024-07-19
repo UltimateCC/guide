@@ -1,0 +1,46 @@
+{
+  "HEADER__TITLE": "How to use Ultimate Closed Captions",
+
+  "NAVIGATION__QUICK_NAV": "Quick navigation",
+  "NAVIGATION__TOGGLE_SUBTITLE": "Show subtitles",
+  "NAVIGATION__CHOOSE_LANGUAGE": "Choose your language",
+  "NAVIGATION__CUSTOMIZE": "Customize",
+  "NAVIGATION__COMMON_ISSUES": "Common issues",
+  "NAVIGATION__YOUR_LANGUAGE": "Your language",
+  "NAVIGATION__YOUR_DEVICE": "Your device",
+  "NAVIGATION__CONTRIBUTE": "Contribute",
+
+  "OVERLAY": {
+    "TOGGLE_SUBTITLE__HOVER": "To make the buttons appear (at the bottom left of the screen), hover over the stream",
+    "TOGGLE_SUBTITLE__SHOW_TITLE": "Show subtitles",
+    "TOGGLE_SUBTITLE__SHOW_CONTENT_PART_1": "Click on the icon",
+    "TOGGLE_SUBTITLE__SHOW_CONTENT_PART_2": "at the bottom left of the stream.",
+    "TOGGLE_SUBTITLE__HIDE_TITLE": "Hide subtitles",
+    "TOGGLE_SUBTITLE__HIDE_CONTENT_PART_1": "Click on the icon",
+    "TOGGLE_SUBTITLE__HIDE_CONTENT_PART_2": "at the bottom left of the stream.",
+
+    "CHOOSE_LANGUAGE__CONTENT_1": "Open settings by clicking on the gear",
+    "CHOOSE_LANGUAGE__CONTENT_2": "If the streamer has provided translated languages, you can select the one you want in the language selector.",
+
+    "CUSTOMIZE__TEXT_TITLE": "Text customization",
+    "CUSTOMIZE__TEXT_CONTENT": "In the “Text” category: you can set the text color (“Text Color”), text size (“Text Size”) and text font (“Font Family”).",
+    "CUSTOMIZE__BACKGROUND_TITLE": "Background customization",
+    "CUSTOMIZE__BACKGROUND_CONTENT": "In the “Background” category: you can change the background color of the subtitle area (“Color”) and its opacity (“Opacity”).",
+    "CUSTOMIZE__BOX_TITLE": "Box customization",
+    "CUSTOMIZE__BOX_CONTENT": "The subtitle area can be freely moved and resized around the entire Twitch player. You can also reset or lock its position in the player.",
+    
+    "COMMON_ISSUES__NOT_VISIBLE_TITLE": "I don't see the extension",
+    "COMMON_ISSUES__NOT_VISIBLE_CONTENT_1": "If you don't see the extension, look for the icon",
+    "COMMON_ISSUES__NOT_VISIBLE_CONTENT_2": "to the right of the player. The extension may be enabled as a component similar to the mobile version.",
+    "COMMON_ISSUES__NOT_VISIBLE_NO_ICON": "If you don't see the icon, the extension may not be enabled on the channel you're watching. It can also be blocked by one of your browser extensions."
+  },
+
+  "MOBILE": {
+    "TOGGLE_SUBTITLE__CONTENT_PART_1": "To show subtitles on the Twitch app, click on the icon",
+    "TOGGLE_SUBTITLE__CONTENT_PART_2": "at the top right of the chat",
+
+    "CHOOSE_LANGUAGE__CONTENT": "To select the language, click on the “Language” field to display the available languages (This field is only present if the translation is enabled by the streamer)"
+  },
+
+  "COMMON_ISSUES__WAITING_FOR_SPEECH": "If you see the message “Waiting for broadcaster speech”, it means the extension has not yet received text to display, this often happens when the streamer is not using the extension"
+}

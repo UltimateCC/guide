@@ -1,0 +1,46 @@
+{
+  "HEADER__TITLE": "Como utilizar o Ultimate Closed Captions",
+
+  "NAVIGATION__QUICK_NAV": "Navegação rápida",
+  "NAVIGATION__TOGGLE_SUBTITLE": "Mostrar legendas",
+  "NAVIGATION__CHOOSE_LANGUAGE": "Escolher a sua língua",
+  "NAVIGATION__CUSTOMIZE": "Personalizar",
+  "NAVIGATION__COMMON_ISSUES": "Problemas frequentes",
+  "NAVIGATION__YOUR_LANGUAGE": "A sua língua",
+  "NAVIGATION__YOUR_DEVICE": "O seu aparelho",
+  "NAVIGATION__OUR_CONTRIBUTE": "Contribuir",
+
+  "OVERLAY": {
+    "TOGGLE_SUBTITLE__HOVER": "Para visualizar os botões (canto inferior esquerdo do ecrã), passe o cursor sobre o fluxo",
+    "TOGGLE_SUBTITLE__SHOW_TITLE": "Mostrar legendas",
+    "TOGGLE_SUBTITLE__SHOW_CONTENT_PART_1": "Clicar no ícone",
+    "TOGGLE_SUBTITLE__SHOW_CONTENT_PART_2": "no canto inferior esquerdo do fluxo",
+    "TOGGLE_SUBTITLE__HIDE_TITLE": "Ocultar legendas",
+    "TOGGLE_SUBTITLE__HIDE_CONTENT_PART_1": "Clicar no ícone",
+    "TOGGLE_SUBTITLE__HIDE_CONTENT_PART_2": "no canto inferior esquerdo da transmissão",
+
+    "CHOOSE_LANGUAGE__CONTENT_1": "Abrir as definições clicando na engrenagem",
+    "CHOOSE_LANGUAGE__CONTENT_2": "Se o streamer tiver fornecido idiomas traduzidos, pode selecionar o que pretende no seletor de idiomas.",
+
+    "CUSTOMIZE__TEXT_TITLE": "Personalização do texto",
+    "CUSTOMIZE__TEXT_CONTENT": "Na categoria “Text”: pode definir a cor do texto (“Text Color”), o tamanho do texto (“Text Size”) e o tipo de letra do texto (“Font Family”)",
+    "CUSTOMIZE__BACKGROUND_TITLE": "Personalização do fundo",
+    "CUSTOMIZE__BACKGROUND_CONTENT": "Na categoria “Background”: pode alterar a cor de fundo da zona da legenda (“Color”) e a sua opacidade (“Opacity”)",
+    "CUSTOMIZE__BOX_TITLE": "Personalizar a caixa",
+    "CUSTOMIZE__BOX_CONTENT": "A área da legenda pode ser movida e redimensionada livremente no leitor da Twitch. Também podes repor ou bloquear a sua posição no leitor",
+    
+    "COMMON_ISSUES__NOT_VISIBLE_TITLE": "Não consigo ver a extensão",
+    "COMMON_ISSUES__NOT_VISIBLE_CONTENT_1": "Se não vir a extensão, procure o ícone",
+    "COMMON_ISSUES__NOT_VISIBLE_CONTENT_2": "à direita do leitor. A extensão pode ser activada como um componente semelhante ao da versão móvel",
+    "COMMON_ISSUES__NOT_VISIBLE_NO_ICON": "Se não vir o ícone, a extensão pode não estar activada no canal que está a ver. Também pode estar bloqueada por uma das extensões do seu browser."
+  },
+
+  "MOBILE": {
+    "TOGGLE_SUBTITLE__CONTENT_PART_1": "Para apresentar legendas na aplicação Twitch, clica no ícone",
+    "TOGGLE_SUBTITLE__CONTENT_PART_2": "no canto superior direito do chat",
+
+    "CHOOSE_LANGUAGE__CONTENT": "Para selecionar o idioma, clica no campo “Language” para exibir os idiomas disponíveis (Este campo só está presente se a tradução for activada pelo streamer)"
+  },
+
+  "COMMON_ISSUES__WAITING_FOR_SPEECH": "Se vir a mensagem “Waiting for broadcaster speech”, significa que a extensão ainda não recebeu qualquer texto para apresentar. Isto acontece frequentemente quando o emissor não está a utilizar a extensão."
+}

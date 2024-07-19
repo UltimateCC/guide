@@ -1,0 +1,46 @@
+{
+  "HEADER__TITLE": "Comment utiliser Ultimate Closed Captions",
+
+  "NAVIGATION__QUICK_NAV": "Navigation rapide",
+  "NAVIGATION__TOGGLE_SUBTITLE": "Afficher les sous-titres",
+  "NAVIGATION__CHOOSE_LANGUAGE": "Choisir votre langue",
+  "NAVIGATION__CUSTOMIZE": "Personnaliser",
+  "NAVIGATION__COMMON_ISSUES": "Problèmes fréquents",
+  "NAVIGATION__YOUR_LANGUAGE": "Votre langue",
+  "NAVIGATION__YOUR_DEVICE": "Votre appareil",
+  "NAVIGATION__CONTRIBUTE": "Contribuer",
+
+  "OVERLAY": {
+    "TOGGLE_SUBTITLE__HOVER": "Pour faire apparaitre les boutons (en bas à gauche de l'écran), survolez le stream",
+    "TOGGLE_SUBTITLE__SHOW_TITLE": "Afficher les sous-titres",
+    "TOGGLE_SUBTITLE__SHOW_CONTENT_PART_1": "Cliquez sur l'icône",
+    "TOGGLE_SUBTITLE__SHOW_CONTENT_PART_2": "en bas à gauche du stream.",
+    "TOGGLE_SUBTITLE__HIDE_TITLE": "Cacher les sous-titres",
+    "TOGGLE_SUBTITLE__HIDE_CONTENT_PART_1": "Cliquez sur l'icône",
+    "TOGGLE_SUBTITLE__HIDE_CONTENT_PART_2": "en bas à gauche du stream.",
+
+    "CHOOSE_LANGUAGE__CONTENT_1": "Ouvrez les réglages en cliquant sur l'engrenage.",
+    "CHOOSE_LANGUAGE__CONTENT_2": "Si le streamer a mis à disposition des langues traduites vous pouvez sélectionner celle que vous voulez dans le sélecteur de langue.",
+
+    "CUSTOMIZE__TEXT_TITLE": "Customisation du texte",
+    "CUSTOMIZE__TEXT_CONTENT": "Dans la catégorie “Text” : vous pouvez définir la couleur du texte (“Text Color”), la taille du texte (“Text Size”) ainsi que la police d'écriture du texte(“Font Family”).",
+    "CUSTOMIZE__BACKGROUND_TITLE": "Customisation du fond",
+    "CUSTOMIZE__BACKGROUND_CONTENT": "Dans la catégorie “Background” : vous pouvez changer la couleur du fond de la zone de sous titre (“Color”) ainsi que son opacité (“Opacity”)",
+    "CUSTOMIZE__BOX_TITLE": "Customisation de la boite",
+    "CUSTOMIZE__BOX_CONTENT": "La zone de sous-titres peut être déplacée et redimensionnée librement sur tout le lecteur Twitch. Vous pouvez également réinitialiser ou verrouiller sa position dans le lecteur.",
+    
+    "COMMON_ISSUES__NOT_VISIBLE_TITLE": "Je ne vois pas l'extension",
+    "COMMON_ISSUES__NOT_VISIBLE_CONTENT_1": "Si vous ne voyez pas l'extension, cherchez l'icone",
+    "COMMON_ISSUES__NOT_VISIBLE_CONTENT_2": "sur la droite du lecteur. L'extension peut être activée en tant que composant similaire à la version mobile.",
+    "COMMON_ISSUES__NOT_VISIBLE_NO_ICON": "Si vous ne voyez pas l'icone, l'extension n'est peut être pas activée sur la chaine que vous regardez. Elle peut aussi être bloquée par une des extensions de votre navigateur."
+  },
+
+  "MOBILE": {
+    "TOGGLE_SUBTITLE__CONTENT_PART_1": "Pour afficher les sous-titres sur l'app Twitch, cliquez sur l'icone",
+    "TOGGLE_SUBTITLE__CONTENT_PART_2": "en haut à droite du chat.",
+
+    "CHOOSE_LANGUAGE__CONTENT": "Pour sélectionner la langue, cliquez sur le champ “Language” afin d'afficher les langues disponible (Ce champ n'est présent que si la traduction est activée par le streamer)"
+  },
+
+  "COMMON_ISSUES__WAITING_FOR_SPEECH": "Si vous voyez le message “Waiting for broadcaster speech”, c'est que l'extension n'a pas encore reçu de texte à afficher, cela arrive souvent lorsque le streamer n'est pas en train d'utiliser l'extension."
+}

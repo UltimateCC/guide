@@ -1,0 +1,662 @@
+$theme-button: #9F4EE5;
+$theme-square: #37373E;
+$theme-title: #B072E8;
+$theme-text: #D9D9D9;
+$theme-scroll: #7643A4;
+$theme-shadow: #00000044;
+$theme-placeholder: #7e7e86;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    background-image: linear-gradient(#934FCE, #C388F9);
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-variant-numeric: lining-nums;
+    color: #D9D9D9;
+    overflow-x: hidden;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway.ttf") format('truetype');
+}
+
+
+/* Body scrollbar */
+body::-webkit-scrollbar {
+    width: 18px;
+    transition: 0.5s;
+}
+
+body::-webkit-scrollbar-track {
+    background: #37373E;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #9F4EE5;
+    border-radius: 50px;
+    border: 5px solid #37373E;
+}
+
+body::-webkit-scrollbar-thumb:active {
+    border: 4px solid #37373E;
+}
+
+.scroll-theme::-webkit-scrollbar {
+    width: 13px;
+    transition: 0.5s;
+}
+
+.scroll-theme::-webkit-scrollbar-track {
+    background: #37373E;
+    border-radius: 50px;
+}
+
+.scroll-theme::-webkit-scrollbar-thumb {
+    background-color: #7643A4;
+    border-radius: 50px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3em;
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: 1.25em;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 0.25em;
+}
+
+a {
+    color: $theme-text;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.theme-select {
+    border-radius: 10px;
+    background: $theme-text;
+    color: $theme-square;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.5em 1em;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.53) inset;
+    cursor: pointer;
+    transition: all 0.2s;
+
+
+    /* Remove arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Add my customisable arrow */
+    $arrow-slide-x: 2.5%;
+    $arrow-size: 1.25em;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 0 55.63 47.79" fill="none"><path d="M50.65.82H5.06C1.89.82-.07,4.28,1.56,7l22.79,37.99c1.58,2.64,5.41,2.64,7,0L54.15,7c1.63-2.72-.33-6.18-3.5-6.18Z" fill="%237643A4"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - #{$arrow-slide-x});
+    background-position-y: 50%;
+    background-size: $arrow-size;
+    padding-right: calc(#{$arrow-size} + #{$arrow-slide-x});
+}
+
+.theme-select:focus {
+    outline: 2px solid $theme-button
+}
+
+.theme-select::-ms-expand {
+    display: none;
+}
+
+.theme-select:hover {
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.35) inset;
+}
+
+.theme-select option:checked {
+    color: $theme-button;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    margin: 1.5em;
+
+    .container {
+        background-color: $theme-square;
+        box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 1em;
+        border-radius: 1em;
+        width: 100%;
+    }
+
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        
+        .main-logo {
+            width: 25%;
+            padding: 1.5em;
+        }
+
+        .main-title {
+            width: 70%;
+            padding: 1.5em;
+            display: flex;
+            justify-content: center;
+            h1 {
+                max-width: 15em;
+            }
+
+            // TODO: Check if this is necessary
+            // @media (min-width: 1920px) {
+            //     h1 {
+            //         max-width: 100%;
+            //     }
+            // }
+        }
+        
+    }
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+
+    .navigation {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        justify-content: space-evenly;
+        height: 100%;
+
+        div > div:not(h2) {
+            margin-top: 1em;
+        }
+
+        .quick-nav div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75em;
+
+            a {
+                font-size: 1.25em;
+            }
+        }
+
+        .langs {
+            min-width: 55%;
+
+            select {
+                width: 100%;
+                font-size: 1.25em;
+            }
+        }
+
+        .devices div {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+
+            button {
+                font-size: 3em;
+                background: none;
+                border: none;
+                cursor: pointer;
+                line-height: 0;
+
+                svg {
+                    fill: $theme-text;
+                }
+
+                &:hover, &.active {
+                    svg {
+                        fill: $theme-button;
+                    }
+                }
+
+                &.active {
+                    cursor: default;
+                }
+            }
+        }
+
+        .contribute {
+            font-size: 1.25em;
+            text-align: center;
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.25em;
+
+                svg {
+                    fill: $theme-text;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    .tuto {
+        width: 70%;
+
+        p {
+            line-height: 1.5em;
+            margin-bottom: 0.25em;
+            margin-top: 0.5em;
+        }
+
+        .responsive-tuto-header {
+            display: none;
+        }
+
+        .tuto-header {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+
+            background: none;
+            border: none;
+            border-bottom: 1px solid $theme-text;
+            color: $theme-text;
+            font-size: 1em;
+            width: 100%;
+            cursor: pointer;
+            padding: 0 0.5em;
+
+            h3 {
+                font-size: 1.5em;
+                text-align: left;
+                margin: 0.5em 0;
+            }
+
+            svg {
+                font-size: 1.5em;
+                margin-top: 0.25em;
+                transition: transform 0.5s ease-in-out;
+                transform: rotate(0deg);
+
+                path {
+                    fill: $theme-text;
+                }
+            }
+        }
+
+        .tuto-item[id^="mobile__"] .tuto-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            // Cancel for the overlay
+            width: 100%;
+            max-width: 75em;
+            gap: 0;
+            
+            .mobile-text {
+                width: 35%;
+            }
+
+            .mobile-img {
+                width: 25%;
+                max-width: 15em;
+            }
+        }
+
+        .tuto-content-container {
+            max-height: 200em;
+            transition: max-height 0.5s ease-in-out;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+
+            .tuto-content {
+                padding: 2em;
+                margin-top: 1em;
+
+                div:first-child p {
+                    margin-top: 0 !important;
+                }
+    
+                img.logo-extension {
+                    height: 2em;
+                }
+            }
+        }
+
+        > .inactive {
+            .tuto-content-container{
+                max-height: 0;
+            }
+
+            .tuto-header svg {
+                transform: rotate(90deg);
+            }
+        }
+
+        #overlay__toggle_captions .tuto-content {
+            display: grid;
+            column-gap: 1em;
+            row-gap: 0.5em;
+            align-items: center;
+            justify-items: center;
+
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+
+            .toggle-captions-hover {
+                grid-column: 1 / 5;
+                grid-row: 1;
+            }
+
+            .toggle-captions-show {
+                grid-column: 1;
+                grid-row: 2;
+                max-width: 15em; 
+            }
+
+            .toggle-captions-hide {
+                grid-column: 4;
+                grid-row: 2;
+                max-width: 15em; 
+            }
+
+            p svg, p img {
+                margin-bottom: -0.5em;
+                fill: $theme-text;
+            }
+
+            .toggle-captions-img {
+                grid-column: 2 / 4;
+                grid-row: 2;
+                max-width: 35em; 
+            }
+
+            .toggle-captions-visible {
+                grid-column: 1 / 5;
+                grid-row: 3;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                button.text-btn {
+                    text-decoration: underline;
+                    cursor: pointer;
+                    background: none;
+                    border: none;
+                    color: $theme-text;
+                    font-size: 1em;
+
+                    h4 {
+                        margin: 0;
+                    }
+
+                    &:hover {
+                        color: $theme-button;
+                    }
+                }
+
+                #toggle-captions-visible-content {
+                    max-width: 60%;
+                    transition: height 0.5s ease-in-out;
+                    overflow: hidden;
+                    height: 0;
+
+                    p {
+                        margin-top: 1.5em;
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+
+            .toggle-captions-not-visible {
+                grid-column: 1 / 5;
+                grid-row: 3;
+                margin-top: 1em;
+            }
+        }
+
+        #overlay__choose_language {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            .tuto-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5em;
+                max-width: 75%;
+
+                p {
+                    width: 100%;
+                }
+            }
+        }
+
+        #overlay__customize .tuto-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5em;
+            
+            h4 {
+                margin-bottom: 0.5em;
+            }
+
+            .customize-settings-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto;
+                column-gap: 1em;
+                row-gap: 0.5em;
+                width: 100%;
+
+                .customize-text_content, .customize-background_content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    p {
+                        max-width: 30em;
+                    }
+                }
+    
+                .customize-text_img, .customize-background_img {
+                    display: flex;
+                    justify-content: center;
+                    
+                    div {
+                        width: 75%;
+                        max-width: 25em;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+    
+                .customize-text_content {
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+    
+                .customize-text_img {
+                    grid-column: 1;
+                    grid-row: 2;
+                }
+    
+                .customize-background_content {
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+    
+                .customize-background_img {
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+    
+            }
+
+            .customize-box, .customize-open-settings {
+                width: 75%;
+            }
+
+            .customize-box {
+                grid-column: 1 / 3;
+                grid-row: 3;
+
+                img {
+                    margin-top: 0.5em;
+                }
+            }
+        }
+
+        #common_issues .tuto-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+    }
+}
+
+// Media query for mobile
+@media (max-width: 768px) {
+    .main-page {
+        font-size: 0.75em;
+        gap: 3em;
+
+        .main-header {
+            flex-direction: column;
+            padding: 1.5em;
+            gap: 1em;
+
+            .main-logo {
+                width: 15em;
+                padding: 0;
+            }
+
+            .main-title {
+                width: 100%;
+                padding: 0;
+
+                h1 {
+                    font-size: 2em;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .main-container {
+        flex-direction: column;
+        gap: 3em;
+
+        .navigation {
+            width: 100%;
+            flex-direction: row;
+
+
+            .quick-nav {
+                display: none;
+            }
+
+            .langs {
+                min-width: auto;
+            }
+        }
+
+        .tuto {
+            width: 100%;
+
+            > .inactive .tuto-content-container{
+                max-height: 100%;
+            }
+
+            .tuto-item[id^="mobile__"] .tuto-content {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+
+                .mobile-text {
+                    width: 100%;
+                }
+
+                .mobile-img {
+                    width: 100%;
+                }
+            }
+
+            .responsive-tuto-header {
+                display: block;
+                text-align: left;
+                padding: 0.5em 0.33em;
+                font-size: 1.5em;
+                border-bottom: 1px solid $theme-text;
+                width: 100%;
+            }
+
+            .tuto-header {
+                display: none;
+            }
+
+            .tuto-content {
+                padding: 1.5em 0;
+                margin-top: 0.5em;
+            }
+
+            #overlay__toggle_captions .tuto-content {
+                display: flex;
+                flex-direction: column;
+
+                .toggle-captions-show, .toggle-captions-hide, #toggle-captions-visible-content {
+                    max-width: 100% !important;
+                }
+            }
+
+            #overlay__choose_language .tuto-content {
+                max-width: 100%;
+            }
+
+            #overlay__customize .tuto-content .customize-settings-container {
+                display: flex;
+                flex-direction: column;
+
+                .customize-background_content, .customize-box {
+                    margin-top: 2em;
+                }
+            }
+        }
+    }
+}
