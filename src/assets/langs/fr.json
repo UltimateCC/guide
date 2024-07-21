@@ -9,6 +9,7 @@
   "NAVIGATION__YOUR_LANGUAGE": "Votre langue",
   "NAVIGATION__YOUR_DEVICE": "Votre appareil",
   "NAVIGATION__CONTRIBUTE": "Contribuer",
+  "NAVIGATION__STREAMER": "Vous êtes un streamer Twitch ?",
 
   "OVERLAY": {
     "TOGGLE_SUBTITLE__HOVER": "Pour faire apparaitre les boutons (en bas à gauche de l'écran), survolez le stream",

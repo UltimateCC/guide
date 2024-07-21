@@ -169,16 +169,10 @@ a {
             padding: 1.5em;
             display: flex;
             justify-content: center;
+            
             h1 {
                 max-width: 15em;
             }
-
-            // TODO: Check if this is necessary
-            // @media (min-width: 1920px) {
-            //     h1 {
-            //         max-width: 100%;
-            //     }
-            // }
         }
         
     }
@@ -199,8 +193,8 @@ a {
         justify-content: space-evenly;
         height: 100%;
 
-        div > div:not(h2) {
-            margin-top: 1em;
+        div > h2 {
+            margin-bottom: 0.5em;
         }
 
         .quick-nav div {
