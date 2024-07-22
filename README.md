@@ -34,6 +34,8 @@ All translations are stored in the `src/assets/langs/` directory. Each language 
     - Create a branch for your changes.
     - Once your changes are made, submit a pull request with a description of the modifications made or the new language added.
 
+    For an example of a typical pull request, you can refer to [this PR](https://github.com/UltimateCC/guide/commit/86e66224a0f0551c0db2d513e79cde48782cb665).
+
 ### Best Practices
 
 - **Consistency**: Ensure your translation aligns with the tone and style of other languages.
