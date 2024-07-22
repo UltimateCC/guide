@@ -43,5 +43,8 @@
     "CHOOSE_LANGUAGE__CONTENT": "Para selecionar o idioma, clica no campo “Language” para exibir os idiomas disponíveis (Este campo só está presente se a tradução for activada pelo streamer)"
   },
 
-  "COMMON_ISSUES__WAITING_FOR_SPEECH": "Se vir a mensagem “Waiting for broadcaster speech”, significa que a extensão ainda não recebeu qualquer texto para apresentar. Isto acontece frequentemente quando o emissor não está a utilizar a extensão."
+  "COMMON_ISSUES__WAITING_FOR_SPEECH": "Se vir a mensagem “Waiting for broadcaster speech”, significa que a extensão ainda não recebeu qualquer texto para apresentar. Isto acontece frequentemente quando o emissor não está a utilizar a extensão.",
+  "COMMON_ISSUES__DISCORD_TITLE": "Ainda tenho uma pergunta",
+  "COMMON_ISSUES__DISCORD_CONTENT": "Se tiver perguntas, sinta-se à vontade para se juntar ao nosso servidor Discord clicando",
+  "COMMON_ISSUES__DISCORD_LINK": "aqui"
 }

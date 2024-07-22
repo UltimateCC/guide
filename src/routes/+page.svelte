@@ -1,26 +1,27 @@
 <script lang="ts">
-	import logo from '../assets/logo.png';
-	import logo_extension from '../assets/logo_extension.png';
-
+	import { onMount } from 'svelte';
+	
+    import available_langs from "../assets/langs/available_langs.json";
+    import guide_en from "../assets/langs/en.json";
+	
+    import logo from '../assets/logo.png';
+    import logo_extension from '../assets/logo_extension.png';
+	
+    import mobile__langs_selector from '../assets/mobile__langs_selector.webp';
+    import mobile__toggle_captions from '../assets/mobile__toggle_captions.webp';
+	
     import overlay__customize_box from '../assets/overlay__customize_box.webp';
     import overlay__customize_settings_background from '../assets/overlay__customize_settings_background.png';
     import overlay__customize_settings_text from '../assets/overlay__customize_settings_text.png';
     import overlay__langs_selector from '../assets/overlay__langs_selector.webp';
     import overlay__open_settings from '../assets/overlay__open_settings.webp';
     import overlay__toggle_captions from '../assets/overlay__toggle_captions.webp';
-
-    import mobile__langs_selector from '../assets/mobile__langs_selector.webp';
-    import mobile__toggle_captions from '../assets/mobile__toggle_captions.webp';
- 
-
-    import available_langs from "../assets/langs/available_langs.json";
-    import guide_en from "../assets/langs/en.json";
-
-    import { onMount } from 'svelte';
+	
     import TutoItem from '../components/TutoItem.svelte';
 
     const MAIN_SITE_URL = 'https://ultimatecc.net';
     const CONTRIBUTE_URL = 'https://github.com/UltimateCC/guide';
+    const DISCORD_URL = '';
 
     type LanguageCodes = keyof typeof available_langs;
     const AVAILABLE_LANGS: Record<LanguageCodes, string> = available_langs;
@@ -326,6 +327,13 @@
                         <p>{guide_content["OVERLAY"]["COMMON_ISSUES__NOT_VISIBLE_NO_ICON"]}</p>
                     </div>
                 {/if}
+
+                <div>
+                    <h4>{guide_content["COMMON_ISSUES__DISCORD_TITLE"]}</h4>
+                    <p>
+                        {guide_content["COMMON_ISSUES__DISCORD_CONTENT"]}
+                        <a href={DISCORD_URL} target="_blank">{guide_content["COMMON_ISSUES__DISCORD_LINK"]}</a>
+                    </p>
             </TutoItem>
         </div>
     </div>

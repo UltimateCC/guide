@@ -43,5 +43,8 @@
     "CHOOSE_LANGUAGE__CONTENT": "To select the language, click on the “Language” field to display the available languages (This field is only present if the translation is enabled by the streamer)"
   },
 
-  "COMMON_ISSUES__WAITING_FOR_SPEECH": "If you see the message “Waiting for broadcaster speech”, it means the extension has not yet received text to display, this often happens when the streamer is not using the extension"
+  "COMMON_ISSUES__WAITING_FOR_SPEECH": "If you see the message “Waiting for broadcaster speech”, it means the extension has not yet received text to display, this often happens when the streamer is not using the extension",
+  "COMMON_ISSUES__DISCORD_TITLE": "I still have a question",
+  "COMMON_ISSUES__DISCORD_CONTENT": "If you have questions, feel free to join our Discord server by clicking",
+  "COMMON_ISSUES__DISCORD_LINK": "here"
 }
