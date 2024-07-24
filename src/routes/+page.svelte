@@ -311,13 +311,13 @@
             {/if}
 
             <TutoItem title={guide_content["NAVIGATION__COMMON_ISSUES"]} htmlId="common_issues" bind:expanded={isOpenCommonIssues}>
-                <div>
+                <div class="common_issues-content">
                     <h4>Waiting for broadcaster speech</h4>
                     <p>{guide_content["COMMON_ISSUES__WAITING_FOR_SPEECH"]}</p>
                 </div>
                 
                 {#if selectedDevice === Device.OVERLAY}
-                    <div>
+                    <div class="common_issues-content">
                         <h4>{guide_content["OVERLAY"]["COMMON_ISSUES__NOT_VISIBLE_TITLE"]}</h4>
                         <p>
                             {guide_content["OVERLAY"]['COMMON_ISSUES__NOT_VISIBLE_CONTENT_1']}
@@ -328,12 +328,13 @@
                     </div>
                 {/if}
 
-                <div>
+                <div class="common_issues-content">
                     <h4>{guide_content["COMMON_ISSUES__DISCORD_TITLE"]}</h4>
                     <p>
                         {guide_content["COMMON_ISSUES__DISCORD_CONTENT"]}
                         <a href={DISCORD_URL} target="_blank">{guide_content["COMMON_ISSUES__DISCORD_LINK"]}</a>
                     </p>
+                </div>
             </TutoItem>
         </div>
     </div>
