@@ -191,8 +191,16 @@ a {
         gap: 3em;
         padding-top: 2em;
         padding-bottom: 2em;
-        justify-content: space-evenly;
         height: 100%;
+        text-align: center;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 3em;
+        }
 
         div > h2 {
             margin-bottom: 0.5em;
@@ -599,8 +607,15 @@ a {
 
         .navigation {
             width: 100%;
-            flex-direction: row;
+            gap: 1.5em;
 
+            .first-nav {
+                flex-direction: row;
+            }
+
+            .seconde-nav {
+                flex-direction: column;
+            }
 
             .quick-nav {
                 display: none;
@@ -609,6 +624,8 @@ a {
             .langs {
                 min-width: auto;
             }
+
+
         }
 
         .tuto {

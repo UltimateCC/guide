@@ -134,74 +134,78 @@
     </div>
     <div class="main-container">
         <div class="navigation container">
-            <div class="quick-nav">
-                <h2>{guide_content["NAVIGATION__QUICK_NAV"]}</h2>
-                <div>
-                    <a href={"#"} on:click={() => {
-                        (selectedDevice === Device.OVERLAY) ? closeAllOverlayItems('toggle_captions') : closeAllMobileItems('toggle_captions');
-                    }}>
-                        {guide_content["NAVIGATION__TOGGLE_SUBTITLE"]}
-                    </a>
-                    <a href={"#"} on:click={() => {
-                        (selectedDevice === Device.OVERLAY) ? closeAllOverlayItems('choose_language') : closeAllMobileItems('choose_language');
-                    }}>
-                        {guide_content["NAVIGATION__CHOOSE_LANGUAGE"]}
-                    </a>
-                    {#if selectedDevice === Device.OVERLAY}
+            <div class="first-nav">
+                <div class="quick-nav">
+                    <h2>{guide_content["NAVIGATION__QUICK_NAV"]}</h2>
+                    <div>
                         <a href={"#"} on:click={() => {
-                            closeAllOverlayItems('customize');
+                            (selectedDevice === Device.OVERLAY) ? closeAllOverlayItems('toggle_captions') : closeAllMobileItems('toggle_captions');
                         }}>
-                            {guide_content["NAVIGATION__CUSTOMIZE"]}
+                            {guide_content["NAVIGATION__TOGGLE_SUBTITLE"]}
                         </a>
-                    {/if}
-                    <a href={"#"} on:click={() => {
-                        (selectedDevice === Device.OVERLAY) ? closeAllOverlayItems('common_issues') : closeAllMobileItems('common_issues');
-                    }}>
-                        {guide_content["NAVIGATION__COMMON_ISSUES"]}
+                        <a href={"#"} on:click={() => {
+                            (selectedDevice === Device.OVERLAY) ? closeAllOverlayItems('choose_language') : closeAllMobileItems('choose_language');
+                        }}>
+                            {guide_content["NAVIGATION__CHOOSE_LANGUAGE"]}
+                        </a>
+                        {#if selectedDevice === Device.OVERLAY}
+                            <a href={"#"} on:click={() => {
+                                closeAllOverlayItems('customize');
+                            }}>
+                                {guide_content["NAVIGATION__CUSTOMIZE"]}
+                            </a>
+                        {/if}
+                        <a href={"#"} on:click={() => {
+                            (selectedDevice === Device.OVERLAY) ? closeAllOverlayItems('common_issues') : closeAllMobileItems('common_issues');
+                        }}>
+                            {guide_content["NAVIGATION__COMMON_ISSUES"]}
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="langs">
+                    <h2>{guide_content["NAVIGATION__YOUR_LANGUAGE"]}</h2>
+                    <div>
+                        <select id="language" class="theme-select" bind:value={selectedLang}>
+                            {#each Object.entries(AVAILABLE_LANGS) as [lang_code, lang_name]}
+                                <option value={lang_code}>{lang_name}</option>
+                            {/each}
+                        </select>
+                    </div>
+                </div>
+
+                <div class="devices">
+                    <h2>{guide_content["NAVIGATION__YOUR_DEVICE"]}</h2>
+                    <div>
+                        <button id="overlay" class:active={selectedDevice === Device.OVERLAY} on:click={() => switchDevice(Device.OVERLAY)}>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" viewBox="0 -960 960 960">
+                                <path d="M20-193.85v-60h80v-555.38h760v555.38h80v60H20Zm380-60h160v-35.38H400v35.38Zm-240-95.38h640v-400H160v400Zm320-200Z"/>
+                            </svg>
+                        </button>
+                        <button id="mobile" class:active={selectedDevice === Device.MOBILE} on:click={() => switchDevice(Device.MOBILE)}>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" viewBox="0 -960 960 960">
+                                <path d="M404.62-166.92h150.76v-35.39H404.62v35.39ZM292.31-60Q262-60 241-81q-21-21-21-51.31v-695.38Q220-858 241-879q21-21 51.31-21h375.38Q698-900 719-879q21 21 21 51.31v695.38Q740-102 719-81q-21 21-51.31 21H292.31ZM280-309.23h400V-730H280v420.77Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seconde-nav">
+                <div class="contribute">
+                    <a href={CONTRIBUTE_URL}>
+                        {guide_content["NAVIGATION__CONTRIBUTE"]}
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" viewBox="0 0 14.78 13.8">
+                            <path d="M7.39,1.14C4.15,1.14,1.53,3.78,1.53,7.05c0,2.61,1.68,4.82,4.01,5.6.29.06.4-.13.4-.28,0-.14,0-.61,0-1.1-1.63.35-1.97-.7-1.97-.7-.26-.68-.65-.86-.65-.86-.53-.36.04-.36.04-.36.59.04.9.61.9.61.52.9,1.37.65,1.71.49.05-.38.2-.65.37-.79-1.3-.14-2.67-.65-2.67-2.91,0-.65.23-1.17.6-1.58-.06-.15-.26-.75.06-1.56,0,0,.49-.16,1.61.61.48-.13.97-.2,1.47-.2.49,0,1,.07,1.47.2,1.12-.76,1.61-.61,1.61-.61.32.81.12,1.42.06,1.56.38.41.6.94.6,1.58,0,2.27-1.37,2.77-2.68,2.91.21.19.4.54.4,1.1,0,.79,0,1.43,0,1.62,0,.16.11.34.4.28,2.33-.78,4.01-2.99,4.01-5.6,0-3.27-2.62-5.91-5.85-5.91Z"/>
+                        </svg>
                     </a>
                 </div>
-            </div>
-
-            <div class="langs">
-                <h2>{guide_content["NAVIGATION__YOUR_LANGUAGE"]}</h2>
-                <div>
-                    <select id="language" class="theme-select" bind:value={selectedLang}>
-                        {#each Object.entries(AVAILABLE_LANGS) as [lang_code, lang_name]}
-                            <option value={lang_code}>{lang_name}</option>
-                        {/each}
-                    </select>
+    
+                <div class="streamer">
+                    <a href={MAIN_SITE_URL}>
+                        {guide_content["NAVIGATION__STREAMER"]}
+                    </a>
                 </div>
-            </div>
-
-            <div class="devices">
-                <h2>{guide_content["NAVIGATION__YOUR_DEVICE"]}</h2>
-                <div>
-                    <button id="overlay" class:active={selectedDevice === Device.OVERLAY} on:click={() => switchDevice(Device.OVERLAY)}>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" viewBox="0 -960 960 960">
-                            <path d="M20-193.85v-60h80v-555.38h760v555.38h80v60H20Zm380-60h160v-35.38H400v35.38Zm-240-95.38h640v-400H160v400Zm320-200Z"/>
-                        </svg>
-                    </button>
-                    <button id="mobile" class:active={selectedDevice === Device.MOBILE} on:click={() => switchDevice(Device.MOBILE)}>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" viewBox="0 -960 960 960">
-                            <path d="M404.62-166.92h150.76v-35.39H404.62v35.39ZM292.31-60Q262-60 241-81q-21-21-21-51.31v-695.38Q220-858 241-879q21-21 51.31-21h375.38Q698-900 719-879q21 21 21 51.31v695.38Q740-102 719-81q-21 21-51.31 21H292.31ZM280-309.23h400V-730H280v420.77Z"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <div class="contribute">
-                <a href={CONTRIBUTE_URL}>
-                    {guide_content["NAVIGATION__CONTRIBUTE"]}
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" width="1em" viewBox="0 0 14.78 13.8">
-                        <path d="M7.39,1.14C4.15,1.14,1.53,3.78,1.53,7.05c0,2.61,1.68,4.82,4.01,5.6.29.06.4-.13.4-.28,0-.14,0-.61,0-1.1-1.63.35-1.97-.7-1.97-.7-.26-.68-.65-.86-.65-.86-.53-.36.04-.36.04-.36.59.04.9.61.9.61.52.9,1.37.65,1.71.49.05-.38.2-.65.37-.79-1.3-.14-2.67-.65-2.67-2.91,0-.65.23-1.17.6-1.58-.06-.15-.26-.75.06-1.56,0,0,.49-.16,1.61.61.48-.13.97-.2,1.47-.2.49,0,1,.07,1.47.2,1.12-.76,1.61-.61,1.61-.61.32.81.12,1.42.06,1.56.38.41.6.94.6,1.58,0,2.27-1.37,2.77-2.68,2.91.21.19.4.54.4,1.1,0,.79,0,1.43,0,1.62,0,.16.11.34.4.28,2.33-.78,4.01-2.99,4.01-5.6,0-3.27-2.62-5.91-5.85-5.91Z"/>
-                    </svg>
-                </a>
-            </div>
-
-            <div class="streamer">
-                <a href={MAIN_SITE_URL}>
-                    {guide_content["NAVIGATION__STREAMER"]}
-                </a>
             </div>
         </div>
         <div class="tuto container" id={selectedDevice === Device.OVERLAY ? '' : ''}>
