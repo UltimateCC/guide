@@ -1,0 +1,50 @@
+{
+  "HEADER__TITLE": "Hoe Ultimate Closed Captions te gebruiken",
+
+  "NAVIGATION__QUICK_NAV": "Snelle navigatie",
+  "NAVIGATION__TOGGLE_SUBTITLE": "Ondertitels weergeven",
+  "NAVIGATION__CHOOSE_LANGUAGE": "Kies uw taal",
+  "NAVIGATION__CUSTOMIZE": "Aanpassen",
+  "NAVIGATION__COMMON_ISSUES": "Veelvoorkomende problemen",
+  "NAVIGATION__YOUR_LANGUAGE": "Uw taal",
+  "NAVIGATION__YOUR_DEVICE": "Uw apparaat",
+  "NAVIGATION__CONTRIBUTE": "Bijdragen",
+  "NAVIGATION__STREAMER": "Bent u een Twitch streamer?",
+
+  "OVERLAY": {
+    "TOGGLE_SUBTITLE__HOVER": "Om de knoppen te laten verschijnen (linksonder in het scherm), beweeg over de stream",
+    "TOGGLE_SUBTITLE__SHOW_TITLE": "Ondertitels weergeven",
+    "TOGGLE_SUBTITLE__SHOW_CONTENT_PART_1": "Klik op het pictogram",
+    "TOGGLE_SUBTITLE__SHOW_CONTENT_PART_2": "linksonder in de stream.",
+    "TOGGLE_SUBTITLE__HIDE_TITLE": "Ondertitels verbergen",
+    "TOGGLE_SUBTITLE__HIDE_CONTENT_PART_1": "Klik op het pictogram",
+    "TOGGLE_SUBTITLE__HIDE_CONTENT_PART_2": "linksonder in de stream.",
+
+    "CHOOSE_LANGUAGE__CONTENT_1": "Open instellingen door te klikken op het tandwiel",
+    "CHOOSE_LANGUAGE__CONTENT_2": "Als de streamer vertaalde talen heeft voorzien, kunt u degene die u wilt selecteren in de taalkeuze.",
+
+    "CUSTOMIZE__TEXT_TITLE": "Tekstaanpassing",
+    "CUSTOMIZE__TEXT_CONTENT": "In de “Text” categorie: kunt u de tekstkleur (“Text Color”), tekstgrootte (“Text Size”) en lettertype (“Font Family”) instellen.",
+    "CUSTOMIZE__BACKGROUND_TITLE": "Achtergrondaanpassing",
+    "CUSTOMIZE__BACKGROUND_CONTENT": "In de “Background” categorie: kunt u de achtergrondkleur van het ondertitelgebied (“Color”) en de opaciteit (“Opacity”) wijzigen.",
+    "CUSTOMIZE__BOX_TITLE": "Kaderaanpassing",
+    "CUSTOMIZE__BOX_CONTENT": "Het ondertitelgebied kan vrij worden verplaatst en vergroot/verkleind rond de gehele Twitch speler. U kunt ook de positie in de speler resetten of vergrendelen.",
+    
+    "COMMON_ISSUES__NOT_VISIBLE_TITLE": "Ik zie de extensie niet",
+    "COMMON_ISSUES__NOT_VISIBLE_CONTENT_1": "Als u de extensie niet ziet, zoek dan naar het pictogram",
+    "COMMON_ISSUES__NOT_VISIBLE_CONTENT_2": "rechts van de speler. De extensie kan zijn ingeschakeld als een component vergelijkbaar met de mobiele versie.",
+    "COMMON_ISSUES__NOT_VISIBLE_NO_ICON": "Als u het pictogram niet ziet, is de extensie mogelijk niet ingeschakeld op het kanaal dat u bekijkt. Het kan ook worden geblokkeerd door een van uw browserextensies."
+  },
+
+  "MOBILE": {
+    "TOGGLE_SUBTITLE__CONTENT_PART_1": "Om ondertitels weer te geven in de Twitch app, klik op het pictogram",
+    "TOGGLE_SUBTITLE__CONTENT_PART_2": "rechtsboven in de chat",
+
+    "CHOOSE_LANGUAGE__CONTENT": "Om de taal te selecteren, klik op het “Language” veld om de beschikbare talen weer te geven (Dit veld is alleen aanwezig als de vertaling is ingeschakeld door de streamer)"
+  },
+
+  "COMMON_ISSUES__WAITING_FOR_SPEECH": "Als u het bericht “Waiting for broadcaster speech” ziet, betekent dit dat de extensie nog geen tekst heeft ontvangen om weer te geven, dit gebeurt vaak wanneer de streamer de extensie niet gebruikt",
+  "COMMON_ISSUES__DISCORD_TITLE": "Ik heb nog een vraag",
+  "COMMON_ISSUES__DISCORD_CONTENT": "Als u vragen heeft, aarzel dan niet om onze Discord server te joinen door te klikken",
+  "COMMON_ISSUES__DISCORD_LINK": "hier"
+}

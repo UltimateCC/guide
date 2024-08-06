@@ -1,0 +1,50 @@
+{
+  "HEADER__TITLE": "Ultimate Closed Captions 사용 방법",
+
+  "NAVIGATION__QUICK_NAV": "빠른 탐색",
+  "NAVIGATION__TOGGLE_SUBTITLE": "자막 표시",
+  "NAVIGATION__CHOOSE_LANGUAGE": "언어 선택",
+  "NAVIGATION__CUSTOMIZE": "사용자 정의",
+  "NAVIGATION__COMMON_ISSUES": "일반적인 문제",
+  "NAVIGATION__YOUR_LANGUAGE": "당신의 언어",
+  "NAVIGATION__YOUR_DEVICE": "당신의 기기",
+  "NAVIGATION__CONTRIBUTE": "기여",
+  "NAVIGATION__STREAMER": "당신은 Twitch 스트리머인가요?",
+
+  "OVERLAY": {
+    "TOGGLE_SUBTITLE__HOVER": "버튼을 나타나게 하려면 (화면 왼쪽 하단), 스트림 위로 마우스를 이동하세요",
+    "TOGGLE_SUBTITLE__SHOW_TITLE": "자막 표시",
+    "TOGGLE_SUBTITLE__SHOW_CONTENT_PART_1": "아이콘을 클릭하세요",
+    "TOGGLE_SUBTITLE__SHOW_CONTENT_PART_2": "스트림 왼쪽 하단에.",
+    "TOGGLE_SUBTITLE__HIDE_TITLE": "자막 숨기기",
+    "TOGGLE_SUBTITLE__HIDE_CONTENT_PART_1": "아이콘을 클릭하세요",
+    "TOGGLE_SUBTITLE__HIDE_CONTENT_PART_2": "스트림 왼쪽 하단에.",
+
+    "CHOOSE_LANGUAGE__CONTENT_1": "기어를 클릭하여 설정을 엽니다",
+    "CHOOSE_LANGUAGE__CONTENT_2": "스트리머가 번역된 언어를 제공한 경우, 언어 선택기에서 원하는 언어를 선택할 수 있습니다.",
+
+    "CUSTOMIZE__TEXT_TITLE": "텍스트 사용자 정의",
+    "CUSTOMIZE__TEXT_CONTENT": "“Text” 카테고리에서: 텍스트 색상 (“Text Color”), 텍스트 크기 (“Text Size”) 및 텍스트 글꼴 (“Font Family”)을 설정할 수 있습니다.",
+    "CUSTOMIZE__BACKGROUND_TITLE": "배경 사용자 정의",
+    "CUSTOMIZE__BACKGROUND_CONTENT": "“Background” 카테고리에서: 자막 영역의 배경 색상 (“Color”) 및 불투명도 (“Opacity”)를 변경할 수 있습니다.",
+    "CUSTOMIZE__BOX_TITLE": "박스 사용자 정의",
+    "CUSTOMIZE__BOX_CONTENT": "자막 영역은 Twitch 플레이어 전체에서 자유롭게 이동하고 크기를 조정할 수 있습니다. 또한, 플레이어 내 위치를 재설정하거나 고정할 수 있습니다.",
+    
+    "COMMON_ISSUES__NOT_VISIBLE_TITLE": "확장 기능이 보이지 않아요",
+    "COMMON_ISSUES__NOT_VISIBLE_CONTENT_1": "확장 기능이 보이지 않으면 아이콘을 찾으세요",
+    "COMMON_ISSUES__NOT_VISIBLE_CONTENT_2": "플레이어 오른쪽에. 확장 기능은 모바일 버전과 유사한 구성 요소로 활성화될 수 있습니다.",
+    "COMMON_ISSUES__NOT_VISIBLE_NO_ICON": "아이콘이 보이지 않으면, 확장 기능이 시청 중인 채널에서 활성화되지 않았을 수 있습니다. 또한, 브라우저 확장 프로그램 중 하나에 의해 차단될 수도 있습니다."
+  },
+
+  "MOBILE": {
+    "TOGGLE_SUBTITLE__CONTENT_PART_1": "Twitch 앱에서 자막을 표시하려면, 아이콘을 클릭하세요",
+    "TOGGLE_SUBTITLE__CONTENT_PART_2": "채팅 오른쪽 상단에",
+
+    "CHOOSE_LANGUAGE__CONTENT": "언어를 선택하려면, “Language” 필드를 클릭하여 사용 가능한 언어를 표시하세요 (이 필드는 스트리머가 번역을 활성화한 경우에만 나타납니다)"
+  },
+
+  "COMMON_ISSUES__WAITING_FOR_SPEECH": "“Waiting for broadcaster speech” 메시지가 표시되면, 확장 기능이 표시할 텍스트를 아직 수신하지 않았다는 의미입니다. 이는 스트리머가 확장 기능을 사용하지 않을 때 자주 발생합니다",
+  "COMMON_ISSUES__DISCORD_TITLE": "질문이 있습니다",
+  "COMMON_ISSUES__DISCORD_CONTENT": "질문이 있으시면, 클릭하여 Discord 서버에 가입하세요",
+  "COMMON_ISSUES__DISCORD_LINK": "여기"
+}
