@@ -288,34 +288,45 @@ a {
         }
 
         .tuto-header {
-            display: flex;
-            position: relative;
-            justify-content: space-between;
-            align-items: center;
-
-            background: none;
-            border: none;
-            border-bottom: 1px solid $theme-text;
-            color: $theme-text;
-            font-size: 1em;
             width: 100%;
-            cursor: pointer;
-            padding: 0 0.5em;
+			padding: 0 0.5em;
+			border-bottom: 1px solid $theme-text;
 
             h3 {
-                font-size: 1.5em;
-                text-align: left;
-                margin: 0.5em 0;
-            }
+                font-size: 1em;
+                width: 100%;
 
-            svg {
-                font-size: 1.5em;
-                margin-top: 0.25em;
-                transition: transform 0.5s ease-in-out;
-                transform: rotate(0deg);
+                button {
+					cursor: pointer;
+                    
+					display: flex;
+                    position: relative;
+                    justify-content: space-between;
+                    align-items: center;
 
-                path {
-                    fill: $theme-text;
+                    background: none;
+                    border: none;
+
+                    width: 100%;
+                    color: $theme-text;
+                
+                    span {
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        text-align: left;
+                        margin: 0.5em 0;
+                    }
+        
+                    svg {
+                        font-size: 1.5em;
+                        margin-top: 0.25em;
+                        transition: transform 0.5s ease-in-out;
+                        transform: rotate(0deg);
+        
+                        path {
+                            fill: $theme-text;
+                        }
+                    }
                 }
             }
         }
